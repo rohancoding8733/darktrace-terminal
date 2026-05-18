@@ -2,7 +2,7 @@
 
 # 🕶 GHOSTTRACE LITE
 
-### Advanced Universal Reconnaissance & Intelligence Framework
+### Python-based reconnaissance and OSINT framework for ethical security testing, CTF workflows, and research automation.
 **Lite Edition**
 
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
