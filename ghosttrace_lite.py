@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
 """
-DARKTRACE — Advanced Reconnaissance & Intelligence Framework
+GHOSTTRACE — Advanced Reconnaissance & Intelligence Framework
 Terminal Edition for Kali Linux / Security Environments
 For authorized security testing and educational purposes only.
 
 Usage:
-    python darktrace_lite.py web <domain>          # Web reconnaissance
-    python darktrace_lite.py file <filepath>        # File intelligence
-    python darktrace_lite.py full <domain>          # Full scan (web + deep)
+    python ghosttrace_lite.py web <domain>          # Web reconnaissance
+    python ghosttrace_lite.py file <filepath>        # File intelligence
+    python ghosttrace_lite.py full <domain>          # Full scan (web + deep)
 
 Requirements: Python 3.8+  (no pip install needed — uses stdlib only)
 Optional:     pip install requests   (for HTTP checks — pre-installed on Kali)
 
-Author:  DARKTRACE Project
+Author:  GHOSTTRACE Project
 License: Educational use only
 """
 
@@ -297,13 +297,13 @@ def http_get(url: str, timeout: int = 8) -> Tuple[int, Dict, str]:
         try:
             r = requests.get(url, timeout=timeout, verify=False,
                              allow_redirects=True,
-                             headers={"User-Agent": "DARKTRACE/1.0"})
+                             headers={"User-Agent": "GHOSTTRACE/1.0"})
             return r.status_code, dict(r.headers), r.text[:50000]
         except Exception:
             return 0, {}, ""
     else:
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": "DARKTRACE/1.0"})
+            req = urllib.request.Request(url, headers={"User-Agent": "GHOSTTRACE/1.0"})
             resp = urllib.request.urlopen(req, timeout=timeout)
             headers = dict(resp.headers)
             body = resp.read(50000).decode("utf-8", errors="ignore")
@@ -319,13 +319,13 @@ def check_http_path(base_url: str, path: str, timeout: int = 5) -> Tuple[str, in
         try:
             r = requests.get(url, timeout=timeout, verify=False,
                              allow_redirects=False,
-                             headers={"User-Agent": "DARKTRACE/1.0"})
+                             headers={"User-Agent": "GHOSTTRACE/1.0"})
             return path, r.status_code
         except Exception:
             return path, 0
     else:
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": "DARKTRACE/1.0"})
+            req = urllib.request.Request(url, headers={"User-Agent": "GHOSTTRACE/1.0"})
             resp = urllib.request.urlopen(req, timeout=timeout)
             return path, resp.status
         except urllib.error.HTTPError as e:
@@ -949,14 +949,14 @@ def generate_attack_analysis(results: ScanResults):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="DARKTRACE — Advanced Reconnaissance & Intelligence Framework",
+        description="GHOSTTRACE — Advanced Reconnaissance & Intelligence Framework",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  python darktrace_lite.py web example.com
-  python darktrace_lite.py file /path/to/config.txt
-  python darktrace_lite.py file document.pdf
-  python darktrace_lite.py full example.com
+  python ghosttrace_lite.py web example.com
+  python ghosttrace_lite.py file /path/to/config.txt
+  python ghosttrace_lite.py file document.pdf
+  python ghosttrace_lite.py full example.com
 
 [!] For authorized security testing and educational purposes ONLY.
         """,

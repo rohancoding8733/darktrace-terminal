@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🕶 DARKTRACE LITE
+# 🕶 GHOSTTRACE LITE
 
 ### Advanced Universal Reconnaissance & Intelligence Framework
 **Lite Edition**
@@ -14,26 +14,26 @@
 
 </div>
 
-> 🚀 **ANNOUNCEMENT: CHECK OUT DARKTRACE-XR!**
+> 🚀 **ANNOUNCEMENT: CHECK OUT GHOSTTRACE-X!**
 > 
-> This repository contains the **Legacy "Lite / Zero-Dependency" Terminal Edition** of Darktrace. It is maintained for users who need a frictionless, single-file recon tool with no external requirements. 
+> This repository contains the **Legacy "Lite / Zero-Dependency" Terminal Edition** of GhostTrace. It is maintained for users who need a frictionless, single-file recon tool with no external requirements. 
 > 
-> However, if you are looking for the ultimate reconnaissance experience, please check out the new **[DarkTrace-XR Framework](https://github.com/rohanndhiman/DarkTrace-XR)**!
+> However, if you are looking for the ultimate reconnaissance experience, please check out the new **[GhostTrace-X Framework](https://github.com/rohanndhiman/GhostTrace-X)**!
 > 
-> **DarkTrace-XR features:**
+> **GhostTrace-X features:**
 > - 💻 A stunning Cyberpunk Web Dashboard
 > - 📧 Email OSINT & Phishing Analysis (SPF/DMARC/MX checks)
 > - 📄 Deep File Intelligence (PDF, DOCX, EXIF parsing)
 > - 🗺️ MITRE ATT&CK Scenario Generation
 > - 🌐 Cloud & Active OSINT Reconnaissance
 > 
-> 👉 **[Click here to visit DarkTrace-XR](https://github.com/rohanndhiman/DarkTrace-XR)**
+> 👉 **[Click here to visit GhostTrace-X](https://github.com/rohanndhiman/GhostTrace-X)**
 
 ---
 
 ## 🎯 Overview
 
-DARKTRACE is a highly portable, highly modular reconnaissance tool. Designed to operate completely isolated from heavy environments, this "Terminal Edition" requires **zero external dependencies** and no `pip install`. Simply drop the script into your terminal and start gathering intelligence.
+GHOSTTRACE is a highly portable, highly modular reconnaissance tool. Designed to operate completely isolated from heavy environments, this "Terminal Edition" requires **zero external dependencies** and no `pip install`. Simply drop the script into your terminal and start gathering intelligence.
 
 It performs **deep intelligence gathering** on websites, extracts metadata from files, parses configuration secrets, and directly maps findings to **MITRE ATT&CK** scenarios for actionable remediation.
 
@@ -43,17 +43,17 @@ It performs **deep intelligence gathering** on websites, extracts metadata from 
 
 ```shell
 # Clone or download the script
-git clone https://github.com/rohancoding8733/darktrace-terminal.git
-cd darktrace-terminal
+git clone https://github.com/rohancoding8733/ghosttrace-terminal.git
+cd ghosttrace-terminal
 
 # Scan a Website (Web Recon)
-python3 darktrace_lite.py web example.com
+python3 ghosttrace_lite.py web example.com
 
 # Scan a File (File Intelligence)
-python3 darktrace_lite.py file config.txt
+python3 ghosttrace_lite.py file config.txt
 
 # Run a Full Scan
-python3 darktrace_lite.py full example.com
+python3 ghosttrace_lite.py full example.com
 ```
 
 ---
@@ -81,10 +81,10 @@ python3 darktrace_lite.py full example.com
 
 ## 💻 Usage & Flags
 
-DARKTRACE uses an intuitive CLI syntax.
+GHOSTTRACE uses an intuitive CLI syntax.
 
 ```text
-usage: darktrace_lite.py [-h] [-q] {web,file,full} target
+usage: ghosttrace_lite.py [-h] [-q] {web,file,full} target
 
 positional arguments:
   {web,file,full}  Scan mode: web (domain recon), file (file analysis), full
@@ -98,20 +98,20 @@ options:
 #### Example Scans
 ```shell
 # Target a specific bug bounty scope
-python3 darktrace_lite.py web target.company.com
+python3 ghosttrace_lite.py web target.company.com
 
 # Scan an extracted zip archive file or config
-python3 darktrace_lite.py file backup_db.yml
+python3 ghosttrace_lite.py file backup_db.yml
 
 # Check a PDF for hidden tracking metadata 
-python3 darktrace_lite.py file confidential_report.pdf
+python3 ghosttrace_lite.py file confidential_report.pdf
 ```
 
 ---
 
 ## 🛠️ Architecture
 
-*   **Self-Contained:** The entire intelligence framework is compressed into a single Python file (`darktrace_lite.py`), making it perfect for rapid deployment on engagements.
+*   **Self-Contained:** The entire intelligence framework is compressed into a single Python file (`ghosttrace_lite.py`), making it perfect for rapid deployment on engagements.
 *   **Cross-Platform UI:** Advanced terminal rendering using raw ANSI codes guarantees beautiful, structured readouts on Kali Linux, standard Ubuntu, macOS, and modern Windows terminals.
 *   **No Third-Party Bloat:** It defaults back to `urllib` natively for requests if optional packages like `requests` are missing.
 
@@ -121,4 +121,4 @@ python3 darktrace_lite.py file confidential_report.pdf
 
 > ⚠️ **IMPORTANT:** This tool is intended for explicitly authorized security testing and educational purposes only. 
 
-Unauthorized use against networks or applications you do not own—or do not have explicit, written permission to test—is highly unethical and potentially illegal. The developer assumes no liability and is not responsible for any misuse, damage, or breaches caused by this tool. By using DARKTRACE, you agree to operate equitably and within the bounds of your local laws.
+Unauthorized use against networks or applications you do not own—or do not have explicit, written permission to test—is highly unethical and potentially illegal. The developer assumes no liability and is not responsible for any misuse, damage, or breaches caused by this tool. By using GHOSTTRACE, you agree to operate equitably and within the bounds of your local laws.
