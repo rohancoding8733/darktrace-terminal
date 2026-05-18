@@ -1,9 +1,9 @@
 <div align="center">
 
-# 🕶 DARKTRACE
+# 🕶 DARKTRACE LITE
 
 ### Advanced Universal Reconnaissance & Intelligence Framework
-**Terminal Edition**
+**Lite Edition**
 
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Platform](https://img.shields.io/badge/Platform-Kali%20%7C%20Linux%20%7C%20Windows-lightgrey.svg)]()
