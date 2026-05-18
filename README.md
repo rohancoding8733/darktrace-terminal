@@ -26,8 +26,6 @@
 > - 📄 Deep File Intelligence (PDF, DOCX, EXIF parsing)
 > - 🗺️ MITRE ATT&CK Scenario Generation
 > - 🌐 Cloud & Active OSINT Reconnaissance
-> 
-> 👉 **[Click here to visit GhostTrace-X](https://github.com/rohanndhiman/GhostTrace-X)**
 
 ---
 
