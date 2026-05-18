@@ -14,6 +14,21 @@
 
 </div>
 
+> 🚀 **ANNOUNCEMENT: CHECK OUT DARKTRACE-XR!**
+> 
+> This repository contains the **Legacy "Lite / Zero-Dependency" Terminal Edition** of Darktrace. It is maintained for users who need a frictionless, single-file recon tool with no external requirements. 
+> 
+> However, if you are looking for the ultimate reconnaissance experience, please check out the new **[DarkTrace-XR Framework](https://github.com/rohanndhiman/DarkTrace-XR)**!
+> 
+> **DarkTrace-XR features:**
+> - 💻 A stunning Cyberpunk Web Dashboard
+> - 📧 Email OSINT & Phishing Analysis (SPF/DMARC/MX checks)
+> - 📄 Deep File Intelligence (PDF, DOCX, EXIF parsing)
+> - 🗺️ MITRE ATT&CK Scenario Generation
+> - 🌐 Cloud & Active OSINT Reconnaissance
+> 
+> 👉 **[Click here to visit DarkTrace-XR](https://github.com/rohanndhiman/DarkTrace-XR)**
+
 ---
 
 ## 🎯 Overview
